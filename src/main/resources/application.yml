@@ -11,9 +11,9 @@ logging:
      org.hibernate: DEBUG        
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/webot?createDatabaseIfNotExist=true
+    url: jdbc:mysql://139.162.62.230:3306/webot?createDatabaseIfNotExist=true
     username: root
-    password: root
+    password: agrima_i876##
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
@@ -26,14 +26,15 @@ spring:
   
 server:
   port: 8080    
+  
 eureka:
   client:
      registerWithEureka: true
      fetchRegistry: true
      serviceUrl:
-       defaultZone: http://localhost:8761/eureka/
+       defaultZone: http://198.58.126.243:8761/eureka/
   instance:
-    hostname: localhost
+    hostname: 198.58.126.243
        
   
   
